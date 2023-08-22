@@ -3,6 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import{ Charts as Chartsjs } from 'chart.js/auto'
 import {AiOutlineArrowDown} from "react-icons/ai"
+import Home from './Home';
+import LeaftLetMap from './LeafletMap';
+// import LeaftLetMap from 'taiyo/src/Pages/LeaftLetMap';
+// import Lea
 
 function Charts() {
   const [chartData, setChartData] = useState(null);
@@ -70,6 +74,13 @@ function Charts() {
       onClick={()=>setShowGraph(!showGraph)}
       />
       </div>
+      {
+        showGraph && 
+    // <Home/>
+      <LeaftLetMap/>
+      }
+
+      
       </div>
   );
 }

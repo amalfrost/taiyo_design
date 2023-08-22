@@ -34,7 +34,8 @@ const Sidebar = () => {
     
     const menuStyle =`cursor-pointer mb-3 duration-300  ${!open && "scale-0" } `;
     return (
-    <div className= {`bg-purple-900   h-screen p-5 pt-8 ${open ? "w-72" : "w-20"} duration-300  relative`}>
+
+    <div className= {`bg-purple-900  min-h-screen  h-auto p-5 pt-8 ${open ? "w-72" : "w-20"} duration-300  relative`}>
        <BsArrowLeftShort className= {`bg-white text-purple-900
       text-3xl rounded-full absolute -right-3 top-9 border
       border-purple-900 cursor-pointer ${!open && "rotate-180"} `}
